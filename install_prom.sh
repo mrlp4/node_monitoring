@@ -18,6 +18,7 @@
      # Necessary to fill up port of prometheus in prometheus.yml, af far as cadvisor port according to install_cadvisor.sh
      sudo cp ./prometheus.yml /etc/prometheus/prometheus.yml
      sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
+     sudo cp ./prometheus.service /etc/systemd/system/prometheus.service
      sudo systemctl daemon-reload
      sudo systemctl enable prometheus
      sudo systemctl start prometheus
