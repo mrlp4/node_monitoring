@@ -12,7 +12,7 @@
   --storage.tsdb.path /var/lib/prometheus/ \
   --web.console.templates=/etc/prometheus/consoles \
   --web.console.libraries=/etc/prometheus/console_libraries \
-  --web.listen-address="0.0.0.0:27090"
+  --web.listen-address="0.0.0.0:8090"
   ExecReload=/bin/kill -HUP $MAINPID
 
 [Install]
