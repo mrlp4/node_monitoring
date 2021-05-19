@@ -15,12 +15,9 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
       - targets: ['localhost:9100']
-    # cyber monitoring
   - job_name: 'Validator'
     static_configs:
       - targets: ['localhost:26660']
-        labels:
-          group: 'Validator'
   - job_name: 'container'
     scrape_interval: 5s
     static_configs:
